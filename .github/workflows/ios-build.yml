@@ -1,0 +1,62 @@
+name: Build iPhone app (unsigned IPA)
+
+# Runs automatically on every push, and can also be started by hand from the
+# GitHub "Actions" tab (Run workflow). Output = an unsigned .ipa you download
+# from the run and install onto your iPhone with Sideloadly on Windows.
+
+on:
+  push:
+    branches: [ "**" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-14        # a real Mac in GitHub's cloud (free for public repos)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: List schemes (for the log)
+        run: xcodebuild -list -project HairColorPro.xcodeproj
+
+      - name: Build (unsigned, device SDK)
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project HairColorPro.xcodeproj \
+            -scheme HairColorPro \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            clean build
+
+      - name: Package into an .ipa
+        run: |
+          set -e
+          APP=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -name "*.app" | head -1)
+          echo "Packaging: $APP"
+          rm -rf Payload
+          mkdir -p Payload
+          cp -R "$APP" Payload/
+          zip -qr HairColorPro-unsigned.ipa Payload
+          ls -lh HairColorPro-unsigned.ipa
+
+      - name: Upload the IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: HairColorPro-unsigned-ipa
+          path: HairColorPro-unsigned.ipa
+          if-no-files-found: error
