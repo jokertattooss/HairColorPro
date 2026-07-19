@@ -1,0 +1,24 @@
+# XcodeGen config — on your Mac run:
+#   brew install xcodegen
+#   xcodegen generate
+# then open HairColorPro.xcodeproj in Xcode.
+name: HairColorPro
+options:
+  bundleIdPrefix: com.yourname
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  HairColorPro:
+    type: application
+    platform: iOS
+    sources: [HairColorPro]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourname.haircolorpro
+        MARKETING_VERSION: 1.0
+        CURRENT_PROJECT_VERSION: 1
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSCameraUsageDescription: "The camera is used to photograph hair for color analysis."
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "Photos are used to analyze hair color."
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
