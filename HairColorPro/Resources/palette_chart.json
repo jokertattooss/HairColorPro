@@ -1,0 +1,43 @@
+{
+  "chart_name": "Hair Color Palette Reference Chart",
+  "shades": [
+    {"id": "B01", "code": "1",  "name_fr": "Noir Corbeau",        "name_en": "Raven Black",         "hex": "#0B0F14", "level": 1,  "tone": "neutral",  "group": "base"},
+    {"id": "B02", "code": "2",  "name_fr": "Châtain Foncé",       "name_en": "Dark Brown",          "hex": "#3B2A1E", "level": 3,  "tone": "neutral",  "group": "base"},
+    {"id": "B03", "code": "3",  "name_fr": "Châtain Clair Cendré","name_en": "Light Ash Brown",     "hex": "#8A7A6B", "level": 5,  "tone": "ash",      "group": "base"},
+    {"id": "B04", "code": "4",  "name_fr": "Châtain Clair Doré",  "name_en": "Light Golden Brown",  "hex": "#8F6B42", "level": 5,  "tone": "gold",     "group": "base"},
+    {"id": "B05", "code": "5",  "name_fr": "Châtain",             "name_en": "Brown",               "hex": "#5C4229", "level": 4,  "tone": "neutral",  "group": "base"},
+    {"id": "B06", "code": "6",  "name_fr": "Châtain Clair",       "name_en": "Light Brown",         "hex": "#7B5A38", "level": 5,  "tone": "neutral",  "group": "base"},
+    {"id": "B07", "code": "7",  "name_fr": "Blond Clair",         "name_en": "Light Blonde",        "hex": "#C9A876", "level": 8,  "tone": "neutral",  "group": "base"},
+    {"id": "B08", "code": "8",  "name_fr": "Blond Foncé",         "name_en": "Dark Blonde",         "hex": "#8B6F45", "level": 6,  "tone": "neutral",  "group": "base"},
+    {"id": "B09", "code": "9",  "name_fr": "Blond Clair Cendré",  "name_en": "Light Ash Blonde",    "hex": "#C9BCA8", "level": 8,  "tone": "ash",      "group": "base"},
+    {"id": "B10", "code": "10", "name_fr": "Blond Clair Doré",    "name_en": "Light Golden Blonde", "hex": "#D9B87C", "level": 8,  "tone": "gold",     "group": "base"},
+    {"id": "B11", "code": "11", "name_fr": "Blond Cendré",        "name_en": "Ash Blonde",          "hex": "#B3A48E", "level": 7,  "tone": "ash",      "group": "base"},
+    {"id": "B12", "code": "12", "name_fr": "Blond Doré",          "name_en": "Golden Blonde",       "hex": "#D2A85F", "level": 7,  "tone": "gold",     "group": "base"},
+
+    {"id": "S13", "code": "13", "name_fr": "Acajou",              "name_en": "Acajou (Mahogany Red)","hex": "#4A1F24","level": 3,  "tone": "mahogany", "group": "specialty"},
+    {"id": "S14", "code": "14", "name_fr": "Acajou Clair",        "name_en": "Light Acajou",        "hex": "#6B2A30", "level": 4,  "tone": "mahogany", "group": "specialty"},
+    {"id": "S15", "code": "15", "name_fr": "Acajou Foncé",        "name_en": "Dark Acajou",         "hex": "#3A181D", "level": 2,  "tone": "mahogany", "group": "specialty"},
+    {"id": "S16", "code": "16", "name_fr": "Acajou Violet",       "name_en": "Violet Acajou",       "hex": "#4A2050", "level": 3,  "tone": "mahogany", "group": "specialty"},
+    {"id": "S17", "code": "17", "name_fr": "Rouge Cuivré",        "name_en": "Copper Red",          "hex": "#B4472A", "level": 6,  "tone": "copper",   "group": "specialty"},
+    {"id": "S18", "code": "18", "name_fr": "Blond",               "name_en": "Blonde",              "hex": "#C79A5B", "level": 7,  "tone": "gold",     "group": "specialty"},
+    {"id": "S19", "code": "19", "name_fr": "Blond Clair",         "name_en": "Light Blonde",        "hex": "#D4B078", "level": 8,  "tone": "gold",     "group": "specialty"},
+    {"id": "S20", "code": "20", "name_fr": "Blond Très Clair",    "name_en": "Very Light Blonde",   "hex": "#E8D3A8", "level": 9,  "tone": "neutral",  "group": "specialty"},
+    {"id": "S26a","code": "26", "name_fr": "Aubergine",           "name_en": "Aubergine",           "hex": "#3C1E3E", "level": 2,  "tone": "mahogany", "group": "specialty"},
+    {"id": "S27", "code": "27", "name_fr": "Châtain Clair",       "name_en": "Light Chestnut",      "hex": "#7B5638", "level": 5,  "tone": "neutral",  "group": "specialty"},
+    {"id": "S28a","code": "28", "name_fr": "Châtain Foncé",       "name_en": "Dark Chestnut",       "hex": "#43301F", "level": 3,  "tone": "neutral",  "group": "specialty"},
+    {"id": "S29a","code": "29", "name_fr": "Châtain Doré",        "name_en": "Golden Chestnut",     "hex": "#7A5A2E", "level": 5,  "tone": "gold",     "group": "specialty"},
+
+    {"id": "S26b","code": "26", "name_fr": "Acajou (Mahogany)",   "name_en": "Mahogany",            "hex": "#5A2A28", "level": 4,  "tone": "mahogany", "group": "specialty"},
+    {"id": "S28b","code": "28", "name_fr": "Acajou Clair",        "name_en": "Light Mahogany",      "hex": "#7A4038", "level": 5,  "tone": "mahogany", "group": "specialty"},
+    {"id": "S29b","code": "29", "name_fr": "Brun Doré",           "name_en": "Golden Brown",        "hex": "#8A6132", "level": 5,  "tone": "gold",     "group": "specialty"},
+    {"id": "S32", "code": "32", "name_fr": "Blond Très Clair Doré","name_en": "Very Light Golden Blonde","hex": "#EFD9A5","level": 9,"tone": "gold",   "group": "specialty"},
+    {"id": "S33", "code": "33", "name_fr": "Chocolat Doré",       "name_en": "Golden Chocolate",    "hex": "#5E3A22", "level": 4,  "tone": "gold",     "group": "specialty"},
+    {"id": "S34", "code": "34", "name_fr": "Blond Extra",         "name_en": "Extra Blonde",        "hex": "#F2E4C4", "level": 10, "tone": "neutral",  "group": "specialty"},
+    {"id": "S36", "code": "36", "name_fr": "Rouge Rubis",         "name_en": "Ruby Red",            "hex": "#8B1230", "level": 4,  "tone": "red",      "group": "specialty"},
+    {"id": "S37", "code": "37", "name_fr": "Miel",                "name_en": "Honey",               "hex": "#C68A3F", "level": 7,  "tone": "gold",     "group": "specialty"},
+    {"id": "S38", "code": "38", "name_fr": "Intensificateur Bleu","name_en": "Blue Intensifier",    "hex": "#1435C8", "level": 0,  "tone": "ash",      "group": "mixer", "is_mixer": true},
+    {"id": "S39", "code": "39", "name_fr": "Rouge",               "name_en": "Red",                 "hex": "#C41220", "level": 5,  "tone": "red",      "group": "specialty"},
+    {"id": "S40", "code": "40", "name_fr": "Bordeaux",            "name_en": "Bordeaux",            "hex": "#5A1020", "level": 3,  "tone": "red",      "group": "specialty"},
+    {"id": "S41", "code": "41", "name_fr": "Beige",               "name_en": "Beige",               "hex": "#D8C3A0", "level": 8,  "tone": "ash",      "group": "specialty"}
+  ]
+}
