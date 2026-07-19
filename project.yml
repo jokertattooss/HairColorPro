@@ -4,7 +4,7 @@
 # then open HairColorPro.xcodeproj in Xcode.
 name: HairColorPro
 options:
-  bundleIdPrefix: com.yourname
+  bundleIdPrefix: com.jokertattooss
   deploymentTarget:
     iOS: "16.0"
 targets:
@@ -14,7 +14,7 @@ targets:
     sources: [HairColorPro]
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.yourname.haircolorpro
+        PRODUCT_BUNDLE_IDENTIFIER: com.jokertattooss.haircolorpro
         MARKETING_VERSION: 1.0
         CURRENT_PROJECT_VERSION: 1
         TARGETED_DEVICE_FAMILY: "1"
