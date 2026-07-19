@@ -11,11 +11,14 @@ on:
 
 jobs:
   build:
-    runs-on: macos-14        # a real Mac in GitHub's cloud (free for public repos)
+    runs-on: macos-15        # a real Mac in GitHub's cloud (free for public repos)
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Select newest Xcode
+        run: sudo xcode-select -s "$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)/Contents/Developer"
 
       - name: Show Xcode version
         run: xcodebuild -version
